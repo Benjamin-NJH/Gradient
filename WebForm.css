@@ -1,0 +1,46 @@
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+table {
+    background-color: rgb(245, 202, 153);
+}
+
+#main {
+    border: 1px solid #1b0094;
+    border-collapse: collapse;
+    width: auto;
+}
+tr {
+    height: 1em;
+}
+#main > tbody > tr > td {
+    border: 1px dotted #000000;
+    text-align: left;
+    padding: 3px;
+}
+
+#Section1, #Section2, #Section3, #Section4, #Section5, #Section6 {
+    background-color: #2d57b3;
+    color: #fafafa;
+}
+
+h4 {
+    margin: auto;
+}
+
+.s4 {
+    height: 32px; /*textarea rows = 1 start at base 32px, with each increment by font-size height (16px) */
+}
+
+.s4A, #TotalAmount {
+    text-align: center;
+}
+
+.submitRange {
+    padding-left: 12.5rem;
+    text-align: right;
+}
+

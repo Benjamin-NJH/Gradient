@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Simple Form</title>
+        <link href="WebForm.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <h2>Invoice Form</h2><hr>
+            <form method="post">
+                <table id="main">
+                    <tbody>
+                        <tr id="Section1"><td colspan="2"><h4>Section 1</h4></td></tr>
+                        <tr>
+                            <td>Product: </td>
+                            <td><input type="text" name="Product" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Product Category: </td>
+                            <td>
+                                <input type="radio" name="ProductCategory" value="CategoryA" />
+                                <label for="CategoryA">CategoryA </label>
+                                <input type="radio" name="ProductCategory" value="CategoryB" />
+                                <label for="CategoryB">CategoryB </label>
+                                <input type="radio" name="ProductCategory" value="CategoryC" />
+                                <label for="CategoryC">CategoryC </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Vendor: </td>
+                            <td>
+                                <select name="vendor" required>
+                                    <option value=""></option>
+                                    <option value="Coffee Pte Ltd">Coffee Pte Ltd</option>
+                                    <option value="Bread Pte Ltd">Bread Pte Ltd</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr id="Section2"><td colspan="2"><h4>Section 2</h4></td></tr>
+                        <tr>
+                            <td>Bill To: </td>
+                            <td>
+                                <select name="billTo" required>
+                                    <option value=""></option>
+                                    <option value="myCoy1">Company1</option>
+                                    <option value="myCoy2">Company2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ship To: </td>
+                            <td>
+                                <select name="shipTo" required>
+                                    <option value=""></option>
+                                    <option value="myCoy1">Company1</option>
+                                    <option value="myCoy2">Company2</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Geography: </td>
+                            <td>
+                                <select name="Geography">
+                                    <option value=""></option>
+                                    <option value="North America">North America</option>
+                                    <option value="Europe">Europe</option>
+                                    <option value="China">China</option>
+                                    <option value="Asia-Pacific">Asia-Pacific</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Country: </td>
+                            <td>
+                                <select name="Country">
+                                    <option value=""></option>
+                                    <option value="USA">USA</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="France">France</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Spain">Spain</option>
+                                    <option value="China">China</option>
+                                    <option value="Hong Kong">Hong Kong</option>
+                                    <option value="Taiwan">Taiwan</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="South Korea">South Korea</option>
+                                    <option value="Vietnam">Vietnam</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="New Zealand">New Zealand</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr id="Section3"><td colspan="2"><h4>Section 3</h4></td></tr>
+                        <tr>
+                            <td>Invoice# </td>
+                            <td><input type="text" name="InvoiceRef" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Purchase Order# </td>
+                            <td><input type="text" name="PO" placeholder="880#######" /></td>
+                        </tr>
+                        <tr>
+                            <td>Service Date </td>
+                            <td><input type="date" name="ServiceDate" required /></td>
+                        </tr>
+                        <tr>
+                            <td>Invoice Date </td>
+                            <td><input type="date" name="InvoiceDate" required /></td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr id="Section4"><td colspan="2"><h4>Section 4</h4></td></tr>
+                        <tr>
+                            <td colspan="2">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Quantity</th>
+                                            <th>Description</th>
+                                            <th>Unit Price ($)</th>
+                                            <th>Amount ($)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input class="s4 s4Q" type="number" name="Quantity" min="0" max="10000" required /></td>
+                                            <td><textarea name="Description" rows="1" cols="40" required></textarea></td>
+                                            <td><input class="s4 s4P s4PnA" type="text" name="Price" maxlength="12" placeholder="#,###.00" required /></td>
+                                            <!-- <td><input class="s4 s4A s4PnA" type="text" name="Amount" maxlength="12" required /></td> -->
+                                            <td><h4 class="s4 s4A s4PnA"></h4></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input class="s4 s4Q" type="number" name="Quantity" min="0" max="10000" /></td>
+                                            <td><textarea name="Description" rows="1" cols="40" required></textarea></td>
+                                            <td><input class="s4 s4P s4PnA" type="text" name="Price" maxlength="12" placeholder="#,###.00" required /></td>
+                                            <td><h4 class="s4 s4A s4PnA"></h4></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input class="s4 s4Q" type="number" name="Quantity" min="0" max="10000" /></td>
+                                            <td><textarea name="Description" rows="1" cols="40" required></textarea></td>
+                                            <td><input class="s4 s4P s4PnA" type="text" name="Price" maxlength="12" placeholder="#,###.00" required /></td>
+                                            <td><h4 class="s4 s4A s4PnA"></h4></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <td>Tax Rate</td>
+                                            <td>
+                                                <select name="Tax" id="TaxRate" class="s4">
+                                                    <option value=""></option>
+                                                    <option value="Standard-Rated">Standard-Rated (7%)</option>
+                                                    <option value="Zero-Rated">Zero-Rated (0%)</option>
+                                                    <option value="Out-of-Scope">Out-of-Scope Supplies</option>
+                                                    <option value="Exempt">Exempt Supplies</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"></td>
+                                            <td>Total</td>
+                                            <td><h4 id="TotalAmount"></h4></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr id="Section5"><td colspan="2"><h4>Section 5</h4></td></tr>
+                        <tr>
+                            <td colspan="2">
+                                <strong>Comments</strong><br>
+                                <textarea name="Comments" rows="3" cols="96"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Submitter</td>
+                                            <td><input type="text" name="Submitter" required /></td>
+                                            <td class="submitRange">Submit On</td>
+                                            <td><input id="SubmitDate" type="date" name="SubmittedDate" required /></td>
+                                        </tr>
+                                        <tr></tr>
+                                        <tr>
+                                            <td colspan="4">
+                                                <input type="checkbox" name="Acknowledgement" required>
+                                                I acknowledge that the information I have entered are correct.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tbody>
+                        <tr id="Section6"><td colspan="2"><h4>Section 6</h4></td></tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Submit" />
+                                <input type="reset" value="Clear form" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input class="color1" type="color" name="color" value="#2aa4eb" />
+                                <input class="color2" type="color" name="color" value="#ebe72f" />
+                                <button id="btnGradient">Color my Form</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </form>
+        </div>
+        <script type="text/javascript" src="WebForm.js"></script>
+    </body>
+</html>
