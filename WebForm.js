@@ -206,6 +206,7 @@ window.onload = function() {
     submitBtn.addEventListener('click', () => {
         getFormField();
         submitInvoice();
+        clearTheForm();
     })
 
     //clear form
