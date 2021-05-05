@@ -41,13 +41,13 @@ function setGradient(tableMain, color1, color2) {
 
 function submitInvoice() {
     fetch('http://localhost:3000/', {
-        method: 'put',
+        method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(formDetails) //converts from javascript to json
     })
     .then(res => res.json())
     .then(data => {
-        console.log(data.Product)
+        console.log(data)
     })
     .catch(err => console.log(err))
 }

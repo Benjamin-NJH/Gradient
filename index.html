@@ -9,7 +9,8 @@
     <body>
         <div>
             <h2>Invoice Form</h2><hr>
-            <form method="PUT">
+            <!-- <form method="POST" action="" target="_blank"> -->
+            <article>
                 <table id="main">
                     <tbody>
                         <tr id="Section1"><td colspan="2"><h4>Section 1</h4></td></tr>
@@ -47,8 +48,8 @@
                             <td>
                                 <select class="inv" name="billTo" required>
                                     <option value=""></option>
-                                    <option value="myCoy1">Company1</option>
-                                    <option value="myCoy2">Company2</option>
+                                    <option value="Company1">Company1</option>
+                                    <option value="Company2">Company2</option>
                                 </select>
                             </td>
                         </tr>
@@ -57,8 +58,8 @@
                             <td>
                                 <select class="inv" name="shipTo" required>
                                     <option value=""></option>
-                                    <option value="myCoy1">Company1</option>
-                                    <option value="myCoy2">Company2</option>
+                                    <option value="Company1">Company1</option>
+                                    <option value="Company2">Company2</option>
                                 </select>
                             </td>
                         </tr>
@@ -214,17 +215,18 @@
                         <tr>
                             <td colspan="2">
                                 <input id="submitBtn" type="submit" value="Submit" />
-                                <input type="reset" value="Clear form" />
+                                <input id="clearBtn" type="reset" value="Clear form" />
                             </td>
                         </tr>
                     </tbody>
                 </table>
-            </form>
+            </article>
+            <!-- </form> -->
             <br>
             <input class="color1" type="color" name="color" value="#2aa4eb" />
             <input class="color2" type="color" name="color" value="#ebe72f" />
             <button id="btnGradient">Color my Form</button>
         </div>
-        <script type="text/javascript" src="bundle.js"></script>
+        <script type="text/javascript" src="WebForm.js"></script>
     </body>
 </html>

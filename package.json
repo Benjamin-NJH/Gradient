@@ -4,7 +4,7 @@
   "description": "",
   "main": "WebForm.js",
   "scripts": {
-    "build": "browserify WebForm.js > bundle.js && live-server --browser=chrome"
+    "build": "live-server --browser=chrome"
   },
   "repository": {
     "type": "git",

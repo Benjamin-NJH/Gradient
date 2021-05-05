@@ -40,13 +40,13 @@ function setGradient(tableMain, color1, color2) {
 
 function submitInvoice() {
     fetch('http://localhost:3000/', {
-        method: 'put',
+        method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(formDetails) //converts from javascript to json
     })
     .then(res => res.json())
     .then(data => {
-        console.log(data.Product)
+        console.log(data)
     })
     .catch(err => console.log(err))
 }
@@ -154,6 +154,19 @@ formDetails = {
         Acknowledgement: ''
 }
 
+const clearTheForm = () => {
+    let formList = document.querySelectorAll(".inv");
+    for (eachNode of formList) {
+        switch (eachNode.getAttribute('name')) {
+            case "acknowledgement":
+                eachNode.checked = false;
+                break;
+            default:
+                eachNode.value = '';
+        }
+    }
+}
+
 window.onload = function() {
     let priceAmt = document.querySelectorAll(".s4PnA");
     let submissionDate = document.getElementById("SubmitDate");
@@ -193,6 +206,12 @@ window.onload = function() {
     submitBtn.addEventListener('click', () => {
         getFormField();
         submitInvoice();
+    })
+
+    //clear form
+    let clearBtn = document.getElementById('clearBtn');
+    clearBtn.addEventListener('click', () => {
+        clearTheForm();
     })
 
 }
