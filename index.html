@@ -9,7 +9,7 @@
     <body>
         <div>
             <h2>Invoice Form</h2><hr>
-            <form method="post">
+            <form method="PUT">
                 <table id="main">
                     <tbody>
                         <tr id="Section1"><td colspan="2"><h4>Section 1</h4></td></tr>
@@ -137,19 +137,19 @@
                                     <tbody>
                                         <tr>
                                             <td><input class="inv s4 s4Q" type="number" name="quantity" min="0" max="10000" required /></td>
-                                            <td><textarea class="inv" name="description" rows="1" cols="40" required></textarea></td>
+                                            <td><textarea class="inv s4" name="description" rows="1" cols="40" required></textarea></td>
                                             <td><input class="inv s4 s4P s4PnA" type="text" name="price" maxlength="12" placeholder="#,###.00" required /></td>
                                             <td><input class="inv s4 s4A s4PnA" type="text" name="amount" placeholder="auto-calculated"></td>
                                         </tr>
                                         <tr>
                                             <td><input class="inv s4 s4Q" type="number" name="quantity" min="0" max="10000" /></td>
-                                            <td><textarea class="inv" name="description" rows="1" cols="40"></textarea></td>
+                                            <td><textarea class="inv s4" name="description" rows="1" cols="40"></textarea></td>
                                             <td><input class="inv s4 s4P s4PnA" type="text" name="price" maxlength="12" placeholder="#,###.00" /></td>
                                             <td><input class="inv s4 s4A s4PnA" type="text" name="amount" placeholder="auto-calculated"></td>
                                         </tr>
                                         <tr>
                                             <td><input class="inv s4 s4Q" type="number" name="quantity" min="0" max="10000" /></td>
-                                            <td><textarea class="inv" name="description" rows="1" cols="40"></textarea></td>
+                                            <td><textarea class="inv s4" name="description" rows="1" cols="40"></textarea></td>
                                             <td><input class="inv s4 s4P s4PnA" type="text" name="price" maxlength="12" placeholder="#,###.00" /></td>
                                             <td><input class="inv s4 s4A s4PnA" type="text" name="amount" placeholder="auto-calculated"></td>
                                         </tr>
@@ -217,17 +217,14 @@
                                 <input type="reset" value="Clear form" />
                             </td>
                         </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input class="color1" type="color" name="color" value="#2aa4eb" />
-                                <input class="color2" type="color" name="color" value="#ebe72f" />
-                                <button id="btnGradient">Color my Form</button>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
             </form>
+            <br>
+            <input class="color1" type="color" name="color" value="#2aa4eb" />
+            <input class="color2" type="color" name="color" value="#ebe72f" />
+            <button id="btnGradient">Color my Form</button>
         </div>
-        <script type="text/javascript" src="WebForm.js"></script>
+        <script type="text/javascript" src="bundle.js"></script>
     </body>
 </html>

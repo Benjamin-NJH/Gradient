@@ -1,0 +1,20 @@
+{
+  "name": "InvoiceForm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "WebForm.js",
+  "scripts": {
+    "build": "browserify WebForm.js > bundle.js && live-server --browser=chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benjamin-NJH/InvoiceForm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benjamin-NJH/InvoiceForm/issues"
+  },
+  "homepage": "https://github.com/Benjamin-NJH/InvoiceForm#readme"
+}

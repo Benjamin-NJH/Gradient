@@ -32,7 +32,7 @@ h4 {
 }
 
 .s4 {
-    height: 32px; /*textarea rows = 1 start at base 32px, with each increment by font-size height (16px) */
+    height: 16px; /*textarea rows = 1 start at base 32px, with each increment by font-size height (16px) */
 }
 
 .s4A, #TotalAmount {
