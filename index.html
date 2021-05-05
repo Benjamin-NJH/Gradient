@@ -15,23 +15,23 @@
                         <tr id="Section1"><td colspan="2"><h4>Section 1</h4></td></tr>
                         <tr>
                             <td>Product: </td>
-                            <td><input type="text" name="Product" required /></td>
+                            <td><input class="inv" type="text" name="product" required /></td>
                         </tr>
                         <tr>
                             <td>Product Category: </td>
                             <td>
-                                <input type="radio" name="ProductCategory" value="CategoryA" />
+                                <input class="inv" type="radio" name="productCategory" value="CategoryA" />
                                 <label for="CategoryA">CategoryA </label>
-                                <input type="radio" name="ProductCategory" value="CategoryB" />
+                                <input class="inv" type="radio" name="productCategory" value="CategoryB" />
                                 <label for="CategoryB">CategoryB </label>
-                                <input type="radio" name="ProductCategory" value="CategoryC" />
-                                <label for="CategoryC">CategoryC </label>
+                                <input class="inv" type="radio" name="productCategory" value="Others" />
+                                <label for="CategoryC">Others </label>
                             </td>
                         </tr>
                         <tr>
                             <td>Vendor: </td>
                             <td>
-                                <select name="vendor" required>
+                                <select class="inv" name="vendor" required>
                                     <option value=""></option>
                                     <option value="Coffee Pte Ltd">Coffee Pte Ltd</option>
                                     <option value="Bread Pte Ltd">Bread Pte Ltd</option>
@@ -45,7 +45,7 @@
                         <tr>
                             <td>Bill To: </td>
                             <td>
-                                <select name="billTo" required>
+                                <select class="inv" name="billTo" required>
                                     <option value=""></option>
                                     <option value="myCoy1">Company1</option>
                                     <option value="myCoy2">Company2</option>
@@ -55,7 +55,7 @@
                         <tr>
                             <td>Ship To: </td>
                             <td>
-                                <select name="shipTo" required>
+                                <select class="inv" name="shipTo" required>
                                     <option value=""></option>
                                     <option value="myCoy1">Company1</option>
                                     <option value="myCoy2">Company2</option>
@@ -65,7 +65,7 @@
                         <tr>
                             <td>Geography: </td>
                             <td>
-                                <select name="Geography">
+                                <select class="inv" name="geography">
                                     <option value=""></option>
                                     <option value="North America">North America</option>
                                     <option value="Europe">Europe</option>
@@ -77,7 +77,7 @@
                         <tr>
                             <td>Country: </td>
                             <td>
-                                <select name="Country">
+                                <select class="inv" name="country">
                                     <option value=""></option>
                                     <option value="USA">USA</option>
                                     <option value="United Kingdom">United Kingdom</option>
@@ -105,19 +105,19 @@
                         <tr id="Section3"><td colspan="2"><h4>Section 3</h4></td></tr>
                         <tr>
                             <td>Invoice# </td>
-                            <td><input type="text" name="InvoiceRef" required /></td>
+                            <td><input class="inv" type="text" name="invoiceRef" required /></td>
                         </tr>
                         <tr>
                             <td>Purchase Order# </td>
-                            <td><input type="text" name="PO" placeholder="880#######" /></td>
+                            <td><input class="inv" type="text" name="purchaseOrder" placeholder="880#######" /></td>
                         </tr>
                         <tr>
                             <td>Service Date </td>
-                            <td><input type="date" name="ServiceDate" required /></td>
+                            <td><input class="inv" type="date" name="serviceDate" required /></td>
                         </tr>
                         <tr>
                             <td>Invoice Date </td>
-                            <td><input type="date" name="InvoiceDate" required /></td>
+                            <td><input class="inv" type="date" name="invoiceDate" required /></td>
                         </tr>
                     </tbody>
 
@@ -136,30 +136,29 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><input class="s4 s4Q" type="number" name="Quantity" min="0" max="10000" required /></td>
-                                            <td><textarea name="Description" rows="1" cols="40" required></textarea></td>
-                                            <td><input class="s4 s4P s4PnA" type="text" name="Price" maxlength="12" placeholder="#,###.00" required /></td>
-                                            <!-- <td><input class="s4 s4A s4PnA" type="text" name="Amount" maxlength="12" required /></td> -->
-                                            <td><h4 class="s4 s4A s4PnA"></h4></td>
+                                            <td><input class="inv s4 s4Q" type="number" name="quantity" min="0" max="10000" required /></td>
+                                            <td><textarea class="inv" name="description" rows="1" cols="40" required></textarea></td>
+                                            <td><input class="inv s4 s4P s4PnA" type="text" name="price" maxlength="12" placeholder="#,###.00" required /></td>
+                                            <td><input class="inv s4 s4A s4PnA" type="text" name="amount" placeholder="auto-calculated"></td>
                                         </tr>
                                         <tr>
-                                            <td><input class="s4 s4Q" type="number" name="Quantity" min="0" max="10000" /></td>
-                                            <td><textarea name="Description" rows="1" cols="40" required></textarea></td>
-                                            <td><input class="s4 s4P s4PnA" type="text" name="Price" maxlength="12" placeholder="#,###.00" required /></td>
-                                            <td><h4 class="s4 s4A s4PnA"></h4></td>
+                                            <td><input class="inv s4 s4Q" type="number" name="quantity" min="0" max="10000" /></td>
+                                            <td><textarea class="inv" name="description" rows="1" cols="40"></textarea></td>
+                                            <td><input class="inv s4 s4P s4PnA" type="text" name="price" maxlength="12" placeholder="#,###.00" /></td>
+                                            <td><input class="inv s4 s4A s4PnA" type="text" name="amount" placeholder="auto-calculated"></td>
                                         </tr>
                                         <tr>
-                                            <td><input class="s4 s4Q" type="number" name="Quantity" min="0" max="10000" /></td>
-                                            <td><textarea name="Description" rows="1" cols="40" required></textarea></td>
-                                            <td><input class="s4 s4P s4PnA" type="text" name="Price" maxlength="12" placeholder="#,###.00" required /></td>
-                                            <td><h4 class="s4 s4A s4PnA"></h4></td>
+                                            <td><input class="inv s4 s4Q" type="number" name="quantity" min="0" max="10000" /></td>
+                                            <td><textarea class="inv" name="description" rows="1" cols="40"></textarea></td>
+                                            <td><input class="inv s4 s4P s4PnA" type="text" name="price" maxlength="12" placeholder="#,###.00" /></td>
+                                            <td><input class="inv s4 s4A s4PnA" type="text" name="amount" placeholder="auto-calculated"></td>
                                         </tr>
 
                                         <tr>
                                             <td colspan="2"></td>
                                             <td>Tax Rate</td>
                                             <td>
-                                                <select name="Tax" id="TaxRate" class="s4">
+                                                <select class="inv" name="taxRate" id="TaxRate" class="s4">
                                                     <option value=""></option>
                                                     <option value="Standard-Rated">Standard-Rated (7%)</option>
                                                     <option value="Zero-Rated">Zero-Rated (0%)</option>
@@ -171,7 +170,7 @@
                                         <tr>
                                             <td colspan="2"></td>
                                             <td>Total</td>
-                                            <td><h4 id="TotalAmount"></h4></td>
+                                            <td><input id="TotalAmount" class="inv s4" type="text" name="totalAmount" placeholder="auto-calculated"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -184,7 +183,7 @@
                         <tr>
                             <td colspan="2">
                                 <strong>Comments</strong><br>
-                                <textarea name="Comments" rows="3" cols="96"></textarea>
+                                <textarea class="inv" name="comments" rows="3" cols="96"></textarea>
                             </td>
                         </tr>
                         <tr>
@@ -193,14 +192,14 @@
                                     <tbody>
                                         <tr>
                                             <td>Submitter</td>
-                                            <td><input type="text" name="Submitter" required /></td>
+                                            <td><input class="inv" type="text" name="submitter" required /></td>
                                             <td class="submitRange">Submit On</td>
-                                            <td><input id="SubmitDate" type="date" name="SubmittedDate" required /></td>
+                                            <td><input id="SubmitDate" class="inv" type="date" name="submittedDate" required /></td>
                                         </tr>
                                         <tr></tr>
                                         <tr>
                                             <td colspan="4">
-                                                <input type="checkbox" name="Acknowledgement" required>
+                                                <input class="inv" type="checkbox" name="acknowledgement" required>
                                                 I acknowledge that the information I have entered are correct.
                                             </td>
                                         </tr>
@@ -214,7 +213,7 @@
                         <tr id="Section6"><td colspan="2"><h4>Section 6</h4></td></tr>
                         <tr>
                             <td colspan="2">
-                                <input type="submit" value="Submit" />
+                                <input id="submitBtn" type="submit" value="Submit" />
                                 <input type="reset" value="Clear form" />
                             </td>
                         </tr>
@@ -227,7 +226,6 @@
                         </tr>
                     </tbody>
                 </table>
-                
             </form>
         </div>
         <script type="text/javascript" src="WebForm.js"></script>
