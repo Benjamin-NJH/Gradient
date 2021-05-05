@@ -48,7 +48,7 @@ function submitInvoice() {
     .then(data => {
         console.log(data)
     })
-    .catch(err => console.log(err))
+    .catch(err => console.log("An error occurred while submitting form: ", err))
 }
 
 const getFormField = () => {
