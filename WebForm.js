@@ -186,10 +186,10 @@ window.onload = function() {
     })
 
     //submit form
-    /*let submitBtn = document.getElementById('submitBtn');
+    let submitBtn = document.getElementById('submitBtn');
     submitBtn.addEventListener('click', () => {
         getFormField();
         submitInvoice();
-    })*/
+    })
 
 }
