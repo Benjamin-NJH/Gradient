@@ -158,6 +158,8 @@ const clearTheForm = () => {
     let formList = document.querySelectorAll(".inv");
     for (eachNode of formList) {
         switch (eachNode.getAttribute('name')) {
+            case "submittedDate":
+                eachNode.value = new Date().toISOString().substr(0, 10);
             case "acknowledgement":
                 eachNode.checked = false;
                 break;
